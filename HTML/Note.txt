@@ -1,0 +1,8 @@
+whatever text we can transmit over the internet is hypertext
+
+document object model (DOM)
+
+parsing-- from html to dom
+
+rendering -- conversion from DOM To html
+
