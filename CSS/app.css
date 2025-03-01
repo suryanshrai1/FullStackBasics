@@ -1,10 +1,29 @@
 
+
+
 /* for index.html */
 p{
-    color: red;
+    color: blueviolet;
   }
   
   /* for testCSS */
+ /*
   h1{
     color: orange;
   }
+    */
+
+  h2{
+    color: rgb(rgb(39, 39, 137));
+  }
+  h1{
+    color: #673b3b;
+  }
+  h2{
+    
+  }
+ /* body{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  @import url();

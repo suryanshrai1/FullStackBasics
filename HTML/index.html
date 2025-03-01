@@ -6,92 +6,99 @@
     <title>My Restro</title>
 </head>
 <body>
-    <img src="2.jpg" alt="">
-    <h1>Coffee Junkie</h1>
-    <ol>
-        <li><a href="#">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="feature.html">Features</a></li>
-        <li><a href="contact.html">Contact </a></li>
-    </ol>
-    <img src="3.jpg" alt="">
-    <h1>About</h1>
-    <p>The Coffee Junkie website is a one-stop destination for all things coffee! Whether you're a seasoned barista, a casual coffee drinker, or someone exploring the coffee culture, this platform celebrates the love for coffee with an engaging, informative, and aesthetic online presence.</p>
-    
-    <img src="1.jpg" alt="">
-    
-    <h1>Coffee Junkie Features</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Feature</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Coffee Blog</td>
-                <td>Explore brewing tips, bean reviews, and coffee storage guides.</td>
-            </tr>
-            <tr>
-                <td>Recipes</td>
-                <td>Discover DIY coffee recipes and seasonal drink ideas.</td>
-            </tr>
-            <tr>
-                <td>Shop</td>
-                <td>Buy coffee beans, brewing gear, and fun coffee merch.</td>
-            </tr>
-            <tr>
-                <td>Community</td>
-                <td>Join forums, share coffee art, and connect on social media.</td>
-            </tr>
-            <tr>
-                <td>Quizzes</td>
-                <td>Find your perfect coffee match with fun personality quizzes.</td>
-            </tr>
-            <tr>
-                <td>Subscriptions</td>
-                <td>Get monthly coffee boxes and exclusive member perks.</td>
-            </tr>
-            <tr>
-                <td>Coffee Map</td>
-                <td>Locate top coffee shops globally with reviews and ratings.</td>
-            </tr>
-            <tr>
-                <td>Learning Hub</td>
-                <td>Learn barista skills and tips for starting a coffee business.</td>
-            </tr>
-            <tr>
-                <td>Sustainability</td>
-                <td>Discover eco-friendly coffee practices and initiatives.</td>
-            </tr>
-        </tbody>
-    </table>
-    <img src="4.jpg" alt="">
+    <header>
+        <img src="2.jpg" alt="Coffee Junkie Logo">
+        <h1>Coffee Junkie</h1>
+        <nav>
+            <ol>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="feature.html">Features</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ol>
+        </nav>
+    </header>
 
-    
-    <h1>Report an Issue</h1>
-    <form action="/submit-issue" method="post">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <section>
+        <img src="3.jpg" alt="About Coffee Junkie">
+        <h2>About</h2>
+        <p>The Coffee Junkie website is a one-stop destination for all things coffee! Whether you're a seasoned barista, a casual coffee drinker, or someone exploring the coffee culture, this platform celebrates the love for coffee with an engaging, informative, and aesthetic online presence.</p>
+    </section>
 
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <section>
+        <img src="1.jpg" alt="Coffee Junkie Features">
+        <h2>Coffee Junkie Features</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Coffee Blog</td>
+                    <td>Explore brewing tips, bean reviews, and coffee storage guides.</td>
+                </tr>
+                <tr>
+                    <td>Recipes</td>
+                    <td>Discover DIY coffee recipes and seasonal drink ideas.</td>
+                </tr>
+                <tr>
+                    <td>Shop</td>
+                    <td>Buy coffee beans, brewing gear, and fun coffee merch.</td>
+                </tr>
+                <tr>
+                    <td>Community</td>
+                    <td>Join forums, share coffee art, and connect on social media.</td>
+                </tr>
+                <tr>
+                    <td>Quizzes</td>
+                    <td>Find your perfect coffee match with fun personality quizzes.</td>
+                </tr>
+                <tr>
+                    <td>Subscriptions</td>
+                    <td>Get monthly coffee boxes and exclusive member perks.</td>
+                </tr>
+                <tr>
+                    <td>Coffee Map</td>
+                    <td>Locate top coffee shops globally with reviews and ratings.</td>
+                </tr>
+                <tr>
+                    <td>Learning Hub</td>
+                    <td>Learn barista skills and tips for starting a coffee business.</td>
+                </tr>
+                <tr>
+                    <td>Sustainability</td>
+                    <td>Discover eco-friendly coffee practices and initiatives.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-        <label for="issue-type">Issue Type</label>
-        <select id="issue-type" name="issue-type" required>
-            <option value="bug">Bug/Error</option>
-            <option value="feature">Feature Request</option>
-            <option value="feedback">General Feedback</option>
-            <option value="other">Other</option>
-        </select>
+    <img src="4.jpg" alt="Coffee Junkie Image">
 
-        <label for="description">Describe the Issue</label>
-        <textarea id="description" name="description" rows="5" placeholder="Describe the issue or feedback in detail" required></textarea>
+    <section>
+        <h2>Report an Issue</h2>
+        <form action="/submit-issue" method="post">
+            <label for="name">Your Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
 
-        <button type="submit">Submit Issue</button>
-    </form>
+            <label for="email">Your Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
 
-   
+            <label for="issue-type">Issue Type</label><br>
+            <select id="issue-type" name="issue-type" required>
+                <option value="bug">Bug/Error</option>
+                <option value="feature">Feature Request</option>
+                <option value="feedback">General Feedback</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <label for="description">Describe the Issue</label><br <textarea id="description" name="description" rows="5" placeholder="Describe the issue or feedback in detail" required></textarea><br><br>
+
+            <button type="submit">Submit Issue</button>
+        </form>
+    </section>
 </body>
 </html>
