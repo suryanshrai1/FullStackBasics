@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My portfolio</title>
+</head>
+<body>
+
+  <!-- Outer container with a light emerald background and vertical padding of 24 units -->
+<div class='bg-emerald-100 py-24'>
+  
+  <!-- Inner container using a grid layout: 2 columns on medium screens and above (md:grid-cols-2) -->
+  <div class='align-element grid md:grid-cols-2 items-center gap-8'>
+    
+    <!-- First article section, displaying text content about the developer -->
+    <article>
+      <!-- Large, bold heading with extra spacing between the letters -->
+      <h1 class='text-7xl font-bold tracking-wider'>I'm Suryansh</h1>
+      
+      <!-- A large paragraph with a margin on top (mt-4), slate-colored text, and capitalized letters -->
+      <p class='mt-4 text-3xl text-slate-700 capitalize tracking-wide'>
+        Front-End Developer
+      </p>
+      
+      <!-- Another paragraph with a bit smaller text size, a top margin, and a tracking-wide effect -->
+      <p class='mt-2 text-lg text-slate-700 capitalize tracking-wide'>
+        turning ideas into interactive reality
+      </p>
+      
+      <!-- Flexbox container to align the social media links in a row with some gap between them -->
+      <div class='flex gap-x-4 mt-4'>
+        <!-- GitHub link with a square icon -->
+        <a href='#'>
+          F<FaGithubSquare class='h-8 w-8 text-slate-500 hover:text-black duration-300' />
+        </a>
+        
+        <!-- LinkedIn link with a square icon -->
+        <a href='#'>
+          L<FaLinkedin class='h-8 w-8 text-slate-500 hover:text-black duration-300' />
+        </a>
+        
+        <!-- Twitter link with a square icon -->
+        <a href='#'>
+          T<FaTwitterSquare class='h-8 w-8 text-slate-500 hover:text-black duration-300' />
+        </a>
+      </div>
+    </article>
+    
+    <!-- Second article section to show an image, hidden on smaller screens -->
+    <article class='hidden md:block'>
+      <!-- Display image with specified height for small and large screens -->
+      <img src="assets/hero.svg" class='h-80 lg:h-96' />
+    </article>
+  </div>
+</div>
+
+<!-- Another flexbox container for the second part of the page -->
+<div class="flex flex-col gap-2 p-8 sm:flex-row sm:items-center sm:gap-6 sm:py-4">
+  
+  <!-- Profile image, displayed in a rounded shape with specific height -->
+  <img class="mx-auto block h-24 rounded-full sm:mx-0 sm:shrink-0" src="/assets/react.svg" alt="React Logo" />
+  
+  <!-- Text content section, vertically spaced inside a div -->
+  <div class="space-y-2 text-center sm:text-left">
+    
+    <!-- Name and title -->
+    <div class="space-y-0.5">
+      <p class="text-lg font-semibold text-black">Erin Lindford</p> <!-- Name in bold font -->
+      <p class="font-medium text-gray-500">Product Engineer</p> <!-- Title in medium font -->
+    </div>
+    
+    <!-- Button with hover effects and rounded corners -->
+    <button class="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 font-semibold py-2 px-4 border rounded">
+      Message
+    </button>
+  </div>
+</div>
+
+  
+</body>
+</html>
