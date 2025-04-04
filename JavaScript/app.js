@@ -123,3 +123,107 @@ console.log(srt2);
 
 // Multidimensonal arrays are also there in JS -- arrays in arrays
 
+
+// -----------------
+//Objects- contain methods, properties, 
+// Js is an object based language, no need for new keyword
+// to create with object literal notation below is the syntax:
+
+const product = {
+    id:1,
+    name:'Product 1',
+    price: 100,
+    quantity: 20,
+    discount: 0.1,
+    discountedPrice: function(){
+        return this.price - (this.price * this.discount);
+    } 
+}
+
+console.log(product);
+console.log(product.name);// dot opertaor to acces values / properties from object
+
+console.log(product["price"]); // can acces through array too by providing key
+
+// how to call a function
+console.log(product.discountedPrice());
+
+// How to update
+product.price= 200;
+console.log(product.price);
+console.log(product.discountedPrice());
+
+// Insertion from outside of the obj
+product.description = 'The product actually is Ntebook';
+console.log(product.description);
+
+// deletion 
+delete product.quantity;
+console.log(product);
+
+
+// Use of this keyword-- pointer to the current object/instance
+
+const newProduct = {
+    id:1,
+    fname:'ABC',
+    lname: 'XYZ',
+    fullName: function(){
+        return newProduct.fname+' '+ newProduct.lname;
+    } 
+}
+console.log(newProduct.fullName());
+
+const Product2 = {
+    id:1,
+    fname:'ABC',
+    lname: 'XYZ',
+    fullName: function(){
+        return this;
+    } 
+}
+console.log(Product2.fullName());
+
+console.log(Product2.fullName().fname);
+
+// Nesting is also possible in objects, objects inside obj - use chaining
+// Arrays can be there in objs- there can be nesting too
+
+let addresses = [{
+
+}]
+// obj inside array also there
+
+// Practice Ex - 3.5
+// create an obj name people that contains an empty arry that is called friends
+
+const people = {
+    friends: []
+};
+const friend1 = {
+    firstName: "Ram",
+    lastName: "Kumar",
+    id: 1
+};
+
+const friend2 = {
+    firstName: "Shlok",
+    lastName: "Singh",
+    id: 2
+};
+
+const friend3 = {
+    firstName: "Ashwin",
+    lastName: "Sinha",
+    id: 3
+};
+
+people.friends.push(friend1);
+people.friends.push(friend2);
+people.friends.push(friend3);
+
+console.log(people.friends[0]);
+
+
+// Conditional statements are the same as in JAVA- if, else else if
+
