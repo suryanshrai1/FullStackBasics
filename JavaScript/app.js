@@ -225,5 +225,130 @@ people.friends.push(friend3);
 console.log(people.friends[0]);
 
 
-// Conditional statements are the same as in JAVA- if, else else if
+// Conditional statements are the same as in JAVA- if, else else if, switch case 
+// loops- while, for, do while, for in , for out also same as java
 
+const myItem= [2,8,8,90];
+
+for(let i=0; i<myItem.length; i++){
+    console.log(myItem[i]);
+}
+
+
+for(let item of myItem){
+    console.log(item);
+}
+
+// to iterate on obj
+
+const myItem2= {
+    name : "Kivi",
+    price : 100,
+    category : "fruit",
+    tags : ["healthy", "fruit"]
+};
+
+for (let item in myItem2) {
+   console.log(myItem2);
+   console.log(myItem2[item])
+}
+
+// learn how to convert array to object or object to array
+
+
+
+// FUNCTIONS
+// BAsic approach
+function functionTest() {
+    console.log("function working !");
+}
+functionTest(); // calling
+
+function myFunction(name) {
+    console.log(name);
+}
+myFunction("Suryansh");
+
+function myFunction2(name) {
+    return name;
+}
+let data = myFunction2("Suryansh");
+console.log(data);
+
+// NaN-- not a number
+function square(x=0) {
+    return x*x;
+}
+let sq = square("Surya");
+console.log(sq);
+
+function square2(x=0) {
+    return x*x;
+}
+let sq2 = square(5);
+console.log(sq2);
+
+// lambda experssion or arrow fn
+() => {}// right now no name or anonymous function
+
+(x)=>{
+    return x*x;
+}
+
+
+let square3 = (x)=>{
+    return x*x;
+}
+let res = square3(4);
+console.log(res);
+
+// we can remove () if single argument, can also remove {} and return too
+
+const square4 = x=>x*x
+
+const res2 = square4(3);
+console.log(res2);
+
+
+
+// CALLBACK FUNCTION -- mostly we use arrow fn
+// this is a fn that is passed as an argument in another fn also the fn that is passed is called as calback fn and where the functio is recieved is called higher order fn
+
+function nameFn(cv){
+    cv("surya");
+    //return cv;// no use
+}
+nameFn((data)=>{
+    console.log(data);
+})
+
+
+// use of callback in for each loop
+let ages5 = [84,55,44,23,21,70,44];
+
+console.log("for each");
+ages5.forEach((item3)=>{
+    console.log(item3);
+})
+
+console.log("find");
+ages5.find((item4)=>{
+    console.log(item4);
+})
+
+console.log("find with return and equality check ");
+let foundVal = ages5.find((item5)=>{
+    return item5 === 44; // only returns the first ocuurence after that breaks
+})
+console.log(foundVal); 
+
+// to create local variable in a fn use let and const
+
+// IMMEDAITELY INVOKED FN called directly
+
+(function(name) {
+    console.log("invoked fn");
+})()
+
+
+// recursive function -- fn can call fn itself too
