@@ -1,2 +1,2 @@
 # FullStackBasics
-This repository contains basic commands and syntax of basics of full stack.
+This repository contains syntax and theory of basics of full stack.
